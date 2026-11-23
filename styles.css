@@ -1,6 +1,7 @@
 *{
     padding: 0;
     border: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 #home{
@@ -9,7 +10,6 @@
     color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 #navbar{
     background-color: rgb(142, 1, 1);
@@ -39,16 +39,20 @@
 #hero{
     background-image: url(Gemini_Generated_Image_d37egkd37egkd37e.jpeg);
     background-size: cover;
-  flex: 1;
+    background-position: bottom center;
+  height: clamp(500px,70vh,600px);
     display: flex;
     flex-direction:column ;
     justify-content: space-around;
+    font-family: "BBH Bogle";
 padding: 3%;
 }
-
+.redText{
+    color: rgb(142, 1, 1);
+}
 #topTag{
     display: block;
-    animation: move 5s infinite ease-in;
+    animation: move 8s infinite ease-in;
 }
 #hero h1{
 font-size: 32px;
@@ -82,10 +86,52 @@ font-weight:900;
         transform: translateX(100vw);
     }
 }
-#navbar a:hover,button:hover{
+#navbar img:hover,#navbar a:hover,button:hover{
     position: relative;
     bottom: 1px;
 }
 button:active{
     transform: scale(98%);
+}
+#prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: clamp(400px,70vh,700px);
+    padding: 1%;
+}
+#prodList{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    width: 23%;
+    height: clamp(150px,60vh,300px);
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1%;
+}
+.cards img{
+height: 60%;
+}
+.upCard{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+}
+footer{
+    height: clamp(150px,35vh,300px);
+    background-color: gray;
+    color: rgb(225, 215, 215);
+    display: flex;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    border: 3px solid rgb(17, 16, 16);
 }
