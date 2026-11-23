@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+#home{
+    background-color:rgb(31, 29, 29);
+    font-family: Inter;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#navbar{
+    background-color: rgb(142, 1, 1);
+    border-bottom: 3px solid gold;
+    width: 100%;
+    height: clamp(60px, 10%,120px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+} 
+#navLogo{
+    height: 100%;
+    width: 30px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#hero{
+    background-image: url(Gemini_Generated_Image_d37egkd37egkd37e.jpeg);
+    background-size: cover;
+  flex: 1;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+padding: 3%;
+}
+
+#topTag{
+    display: block;
+    animation: move 5s infinite ease-in;
+}
+#hero h1{
+font-size: 32px;
+display: flex;
+flex-direction:column;
+justify-content: center;
+}
+#hero p{
+    width: 30%;
+    color: gold;
+}
+button{
+    height: clamp(20px,10vh,45px);
+    width: clamp(50px,22vw,110px);
+    border-radius: 9px;
+}
+.mainBtn{
+background-color: rgb(142, 1, 1);
+color: white;
+font-weight:900;
+}
+.secBtn{
+    background-color: rgba(227, 220, 220, 0.5);
+    color: white;
+}
+@keyframes move {
+    from{
+        transform: translateX(-50vw);
+    }
+    to{
+        transform: translateX(100vw);
+    }
+}
+#navbar a:hover,button:hover{
+    position: relative;
+    bottom: 1px;
+}
+button:active{
+    transform: scale(98%);
+}
