@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,69 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Geist+Pixel&family=Geomini:wght@200..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-Feedback
+<body class="feedback">
+    <div id="navbar">
+      <a href="index.html"> <img src="./img/A.png" alt="logo" id="navLogo"></a>
+    <a href="AboutUs.html">About</a>
+<a href="prod.html">Products</a>
+<a href="contact.html">Contact Us</a>
+<!-- <a href="social.html">Social Media</a> -->
+</div>
 
+<div id="content">
+<h1>Please Provide us with your Feedback</h1><br>
+<p>Thank you for helping us improve our business. Fill in the form below.</p>
+<div id="formDiv">
+<form action="thankyou.html" method="get">
+    <div><label for="fname">Enter your Name:</label><input type="text" name="fname" id="fname" required></div>
+    <div><label for="mail">Enter your E-mail:</label><input type="email" name="mail" id="mail" required></div>
+
+    <fieldset>
+        <legend>Rate our Service</legend>
+        <input type="radio" name="rateOurService" id="exc" value="exc" required><label for="exc">Excellent</label>
+        <input type="radio" name="rateOurService" id="good" value="good"><label for="good">Good</label>
+        <input type="radio" name="rateOurService" id="avg" value="avg"><label for="avg">Average</label>
+        <input type="radio" name="rateOurService" id="poor" value="poor"><label for="poor">Poor</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Services Used</legend>
+        <input type="checkbox" name="serviceUsed" id="prodPurch" value="prodPurch"><label for="prodPurch">Product Purchase</label>
+        <input type="checkbox" name="serviceUsed" id="deli" value="deli"><label for="deli">Delivery</label>
+        <input type="checkbox" name="serviceUsed" id="support" value="support"><label for="support">Support</label>
+        <input type="checkbox" name="serviceUsed" id="other" value="other"><label for="other">Other</label>
+    </fieldset>
+
+    <div>
+        <label for="fType">Feedback Type</label>
+        <select name="fType" id="fType">
+            <option value="compliment">Compliment</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="complaint">Complaint</option>
+        </select>
+    </div>
+
+    <div>
+        <textarea name="comments" id="comments" rows="4" placeholder="Comments.." required></textarea>
+    </div>
+
+    <button type="submit" class="feedBtn">Submit</button>
+</form></div>
+</div>
+<footer>
+<div> <h3>Address:</h3><p>Apex Auto Hub<br>
+Showroom 12, Bosan Road<br>
+Gulgasht Colony, Multan, Punjab, Pakistan<br>
+Postal code: 60000</p></div>
+<div><h3>Contact:</h3>
+<p>Phone:0300-0000000</p>
+<p>Email:info@apexautohub.com</p></div>
+<div>
+    <h3>Links</h3>
+<a href="https://www.facebook.com/pakwheels/" target="_blank"   >Facebook</a>
+<a href="https://www.instagram.com/pakwheels/?hl=en" target="_blank"   >Instagram</a>
+</div>
+</footer>
 <script src="script.js"></script>
 </body>
+</html>
